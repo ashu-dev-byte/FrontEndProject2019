@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+body{
+    background-image: url("jeshoots-com-mSESwdMZr-A-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
+
+nav {
+    background-color: white;
+}
+
+.logo{
+    //display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 7px;
+    color: dodgerblue;
+    font-size: 20px;
+    font-family:cursive;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+nav ul{
+    padding: 15px;
+    float: right;
+
+}
+
+
+.menu{
+    //display: contents;
+    background-color: white;
+}
+
+.submenu1{
+    display: none;
+}

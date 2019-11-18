@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome to Travel Monkey</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--
+    <nav class="navbar navbar-expand-sm bg-light fixed-top justify-content-center" id="topnav" style="">
+
+         Links
+        <ul class="navbar-nav" style="">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item destination">
+                <a class="nav-link" href="#">Destinations</a>
+                <div class="destlist">
+            <li>Paris</li>
+            <li>London</li>
+            <li>Rome</li>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mail Us</a>
+            </li>
+        </ul>
+
+    </nav>
+-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" height="25px" style="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Paris</a>
+                        <a class="dropdown-item" href="#">London</a>
+                        <!--          <div class="dropdown-divider"></div>-->
+                        <a class="dropdown-item" href="#">Rome</a>
+                    </div>
+                </li>
+                <!--
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+-->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="row" style="padding-top: 20px;">
+        <div class="container-fluid col-md-12 topslider">
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="false">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="height: 90vh;width: 100vw;">
+                    <div class="carousel-item  active">
+                        <img src="dubai_%20newedit.jpg" alt="Tv image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bigben.jpg" alt="Tv image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="effel_edit.jpg" alt="Laptop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-center mt-5" style="font-size: 40px;">
+            ◽ Our Destinations ◽
+        </p>
+        <div class="row" style="margin-top:80px;">
+            <div class="container col-sm-6 col-lg-4">
+                <div class="h1 text-center">Kids</div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="disneyland.jpg" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">DisneyLand,HongKong</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More3</p>
+                    <img src="UniversalSrudio.jpg" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Universal Studios</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More2</p>
+                    <img src="disney-dream-cruise.jpg" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Desney Dream Cruise</p>
+                </div>
+            </div>
+            <div class="container col-sm-6 col-lg-4">
+                <div class="h1 text-center">Couples</div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="effel_edit.jpg" style=" border-radius: 40px 0;" class="img-thumbnail">
+                    <p style="font-size: 20px;">Paris</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="Rome.jpg" class="imṅg-thumbnail" style=" border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Rome</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="bigben.jpg" class="img-thumbnail" style=" border-radius: 40px 0;">
+                    <p style="font-size: 20px;">London</p>
+                </div>
+            </div>
+            <div class="container col-sm-6 col-md-4">
+                <div class="h1 text-center">Adventure/Hiking</div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="nepal.jpeg" class="img-thumbnail" style=" border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Nepal</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="alps.jpg" class="img-thumbnail" style=" border-radius: 40px 0;">
+                    <p style="font-size: 20px;">The Alps</p>
+                </div>
+                <div class="destcard">
+                    <p class="label_know_more align-middle">Know More</p>
+                    <img src="newzealand.jpg" class="img-thumbnail" style=" border-radius: 40px 0;">
+                    <p style="font-size: 20px;">New Zealand</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <p class="text-center mt-5" style="font-size: 40px;">
+                ◽ Services ◽
+            </p>
+            <div class="row justify-align-center" style="margin-top:80px;">
+                <div class="col-sm-6 col-lg-4 center-block text-center">
+                    <img src="hotel.png" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Hotel Accomodations</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 center-block text-center">
+                    <img src="tour.jfif" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Tour Packages</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 center-block text-center">
+                    <img src="cruise.png" class="img-thumbnail" style="border-radius: 40px 0;">
+                    <p style="font-size: 20px;">Sea Exploration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: rgba(20, 39, 57, 0.94);padding-bottom: 60px;color: white;border-radius: 20px 20px 0px 0px;margin-top: 80px;">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Travel Monkey</h5>
+                    <p>One of the best tour & travel service provider is now just one click away.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Navigation</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Destinations</a>
+                        </li>
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--
+<script>
+
+    var t = 0;
+
+    function ChangeName() {
+        if (t == 0) {
+            document.getElementById("LandmarkName").innerHTML = "London";
+            t = 1;
+        } else if (t == 1) {
+            document.getElementById("LandmarkName").innerHTML = "Paris";
+            t = 0;
+        }
+        //        else if (t == 2) {
+        //            document.getElementById("LandmarkName").innerHTML = "Amazon";
+        //            t = 0;
+        //        }
+    }
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+--></html>

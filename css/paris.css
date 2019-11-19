@@ -4,7 +4,7 @@
 
 .topimg {
     /*    height=200px !important;*/
-    background-image: url(images/paris/paris-wide_edit.jpeg);
+    background-image: url(../images/paris/paris-wide_edit.jpeg);
     background-size: cover;
     overflow: hidden;
     font-weight: bold;
@@ -20,8 +20,10 @@ p {
 .company{
     color: #a09ae6;
 }
-.imgtiles img{
+.imgtiles thumbnail{
+    overflow: hidden;
     max-height: 85px;
+    max-width: 110px;
 }
 .imgtiles .thumb{
     margin: 15px;

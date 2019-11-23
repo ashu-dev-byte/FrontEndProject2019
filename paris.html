@@ -7,11 +7,11 @@
     <title></title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Welcome to Travel Monkey</title>
-    <link rel="stylesheet" href="css/paris.css">
+    <link rel="stylesheet" href="css/places.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="#">
             <img src="images/logo/logo.png" height="25px" style="">
         </a>
@@ -45,7 +45,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid topimg">
+    <div class="container-fluid topimg" style="background-image: url(images/paris/paris-wide_edit.jpeg);">
         <div>
             <p id="path">
                 Travel Monkey &nbsp;/&nbsp; Europe &nbsp; /&nbsp; France &nbsp;/ &nbsp; Paris
@@ -60,22 +60,19 @@
                 #1 Place to visit in June
             </p>
         </div>
-        <div class="row  imgtiles">
 
-            <div class="col-lg-1 col-md-1 col-xs-1 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
+        <div class="row  imgtiles">
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/paris/hd%20(1).jpg" class="card-img" alt="Img">
             </div>
-            <div class="col-lg-1 col-md-1 col-xs-1 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/paris/hd%20(2).jpg" class="card-img" alt="Img">
             </div>
-            <div class="col-lg-1 col-md-1 col-xs-1 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/paris/paris-wide_edit.jpeg" alt="">
-                </a>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/paris/hd%20(3).jpg" class="card-img" alt="Img">
+            </div>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/paris/hd%20(4).jpg" class="card-img" alt="Img">
             </div>
         </div>
     </div>
@@ -87,37 +84,207 @@
                     <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
+                    <a class="nav-link" href="" onclick="photo_slide();">Photos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Places to Visit</a>
+                    <a class="nav-link" href="#bestofplace">Places to Visit</a>
                 </li>
-<!--
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
--->
-                <!--
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Destinations
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Paris</a>
-                        <a class="dropdown-item" href="#">London</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Rome</a>
-                    </div>
-                </li>
--->
-
             </ul>
         </div>
     </nav>
+    <div id="photoslider">
+        <div class="transparent_black fixed-top" style="z-index: 0"></div>
+        <button type="button" class="close fixed-top" onclick="photo_slide()" style="z-index: 99;display: block;" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div id="carouselExampleIndicators" class="carousel slide fixed-top" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('images/paris/hd%20(1).jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('images/paris/hd%20(2).jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Second Slide</h2>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('images/paris/hd%20(3).jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Third Slide</h2>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('images/paris/hd%20(4).jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Fourth Slide</h2>
+                        <p class="lead">This is a description for the fourth slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container about">
+        <h2 class="display-4">Why Go To Paris</h2>
+        <hr class="headunder">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <p class="aboutinfo">
+                    The City of Light draws millions of visitors every year with its unforgettable ambiance. Of course, the divine cuisine and vast art collections deserve some of the credit as well. The gentle River Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of Rococo- and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps. Peppering the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to the market, cafe or cinema.
+                </p>
+                <p class="aboutinfo">Containing world-class museums, fashion, cuisine and an atmosphere all its own, Paris is also a city of "many splendors," as Ernest Hemingway recalled in his memoir, "A Moveable Feast." Visit the beloved Musée d'Orsay ,&nbsp;shop the biggest designers on the Champs Élysées or hit the boutiques in , take in the view atop the Eiffel Tower, or even plan a day trip to Versailles Palace. But don't miss out on the simple pleasure of meandering the marvelous <em>arrondissements</em> (districts), or snacking on street crepes either.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card infocard">
+                    <img src="images/paris/john-towner-UO02gAW3c0c-unsplash.jpg" class="card-img" alt="Img">
+                </div>
+                <div class="card infocard">
+                    <img src="images/paris/rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg" class="card-img" alt="Img">
+                </div>
+                <!--
+                   <div class="card infocard">
+                    <img src="images/paris/hd%20(4).jpg" class="card-img" alt="Img">
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+    <div class="container about">
+        <h2 class="display-4">Getting Around Paris</h2>
+        <hr class="headunder">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card infocard">
+                    <img src="images/paris/metro.jpg" class="card-img" alt="Img">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <p class="aboutinfo">
+                    he best way to get around Paris is on foot and by metro. The elegant arrondissements are practically made for pedestrians. Still, Paris is very big, so you should take the efficient metro to travel long distances. The Régie Autonome des Transports Parisiens or RATP system, which runs the metro, also offers several bus routes around the city. Those traveling to Paris by plane can arrive at Charles de Gaulle Airport (CDG), about 22 miles northeast of the city center, or Paris Orly Airport (ORY), about 11 miles south of the city.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container about">
+        <h2 class="display-4" id="bestofplace">Best Of Paris</h2>
+        <hr class="headunder">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-6 hotelnspa text-center center ">
+                <h2 class="display-6">Hotels & Spa</h2>
+                <center>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/8cb91f9/2147483647/resize/1280x350%5E%3E/crop/1280x350/quality/85/?url=https://usn-us-east-1-prod-traveldms.s3.amazonaws.com/La_Reserve_Paris_Hotel_and_Spa_usn_4.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">La Réserve Paris – Hotel and Spa</h5>
+                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/f27d765/2147483647/resize/1280x350%5E%3E/crop/1280x350/quality/85/?url=https://usn-us-east-1-prod-traveldms.s3.amazonaws.com/Hotel_de_Crillion_A_Rosewood_Hotel_usn_14.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Hôtel de Crillon, A Rosewood Hotel</h5>
+                            <p class="card-text" style="text-align: left;">10 Place de la Concorde
+
+                                Paris 75008</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/f1ec2d9/2147483647/resize/1280x350%5E%3E/crop/1280x350/quality/85/?url=https://usn-us-east-1-prod-traveldms.s3.amazonaws.com/Hotel_Plaza_Athenee_usn_1.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Hôtel Plaza Athénée</h5>
+                            <p class="card-text" style="text-align: left;">25 avenue Montaigne
+
+                                Paris, Paris 75008</p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 thingstodo">
+                <h2 class="display-6 text-center">Things to Do</h2>
+                <center>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/5e9857d/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=travel.usnews.com/static-travel/images/destinations/86/gettyimages-516487761.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Notre-Dame Cathedral (Cathedrale de Notre Dame de Paris)</h5>
+                            <!--                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/8c976a2/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=travel.usnews.com/static-travel/images/destinations/86/gettyimages-522401557.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Musée du Louvre</h5>
+                            <!--
+                            <p class="card-text" style="text-align: left;">10 Place de la Concorde
+
+Paris 75008</p>
+-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://travel.usnews.com/dims4/USNEWS/da30880/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=travel.usnews.com/static-travel/images/destinations/86/gettyimages-615356742.jpg" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Eiffel Tower (Tour Eiffel)</h5>
+                            <!--
+                            <p class="card-text" style="text-align: left;">25 avenue Montaigne
+
+Paris, Paris 75008</p>
+-->
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small transparent_black">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="index.html"> Travel Monkey</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></html>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    function photo_slide() {
+        var x = document.getElementById("photoslider");
+        if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome to Travel Monkey</title>
+    <link rel="stylesheet" href="css/places.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo/logo.png" height="25px" style="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Paris</a>
+                        <a class="dropdown-item" href="#">London</a>
+                        <!--          <div class="dropdown-divider"></div>-->
+                        <a class="dropdown-item" href="#">Rome</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid topimg" style="background-image: url('https://secure.cdn1.wdpromedia.com/dam/disneyland/tickets/DLR-DCA_Holiday_Desktop_1860x821.png');">
+        <div>
+            <p id="path">
+                Travel Monkey &nbsp;/&nbsp; Hong Kong &nbsp; /&nbsp; Disneyland
+            </p>
+            <p style="font-size-adjust: auto;font-size: 35px;margin-bottom: 0px">
+                Disneyland
+            </p>
+            <p style="font-size-adjust: auto;font-size: 13px;margin-top: 0px;padding-top:0px ">
+                Hong Kong
+            </p>
+            <p style="font-size: 25px; ">
+                See your dreams come true with the magic of Disney
+            </p>
+        </div>
+
+        <div class="row  imgtiles">
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/disneyland/jorge-martinez-instagram-jmartinezz9-1iBEXJOHCsM-unsplash.jpg" class="card-img" alt="Img">
+            </div>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/disneyland/ben-lei-qxh_Np1A_fg-unsplash.jpg" class="card-img" alt="Img">
+            </div>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/disneyland/brandi-ibrao-Mvav3d0Ki2k-unsplash.jpg" class="card-img" alt="Img">
+            </div>
+            <div class="card cardstrip" onclick="photo_slide()">
+                <img src="images/disneyland/valentin-girard-TTq0zBTXA8A-unsplash.jpg" class="card-img" alt="Img">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark " style="background-color: rgb(8, 8, 101) !important;">
+
+        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" onclick="photo_slide();">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Places to Visit</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="photoslider">
+        <div class="transparent_black fixed-top" style="z-index: 0"></div>
+        <button type="button" class="close fixed-top" onclick="photo_slide()" style="z-index: 99;display: block;" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div id="carouselExampleIndicators" class="carousel slide fixed-top" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('images/disneyland/back.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('images/disneyland/ben-lei-qxh_Np1A_fg-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Second Slide</h2>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('images/disneyland/jorge-martinez-instagram-jmartinezz9-1iBEXJOHCsM-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Third Slide</h2>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('images/disneyland/valentin-girard-TTq0zBTXA8A-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Fourth Slide</h2>
+                        <p class="lead">This is a description for the fourth slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('images/disneyland/christian-wagner-37GBIXa-T7w-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Fourth Slide</h2>
+                        <p class="lead">This is a description for the fourth slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('images/disneyland/jacob-dyer-q1DrHkWrQDw-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Fourth Slide</h2>
+                        <p class="lead">This is a description for the fourth slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container about">
+        <h2 class="display-4">Disneyland</h2>
+        <h5 class="display-7">Where Disney's Magic comes True</h5>
+        <hr class="headunder">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <p class="aboutinfo">
+                    Hong Kong Disneyland (also known as HK Disneyland or HKDL) is a theme park located on reclaimed land in Penny's Bay, Lantau Island. It is located inside the Hong Kong Disneyland Resort and it is owned and managed by Hong Kong International Theme Parks. It is the largest theme park in Hong Kong, followed by Ocean Park Hong Kong.
+                </p>
+                <p class="aboutinfo">The park has a daily capacity of 34,000 visitors.The park, partially in Islands District and Tsuen Wan District, is divided into "lands" (themed areas) and well-concealed backstage areas. On entering a land, a guest is completely immersed in a themed environment and is unable to see or hear any other realm. The idea behind this was to develop theatrical "stages" with seamless passages from one land to the next.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card infocard">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipMkIk8PqDbAPtb3ahqVo_eWaoXgtawPa7MiVVyb=w284-h160-k-no" class="card-img" alt="Img">
+                </div>
+                <div class="card infocard">
+                    <img src="images/paris/rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg" class="card-img" alt="Img">
+                </div>
+                <!--
+                   <div class="card infocard">
+                    <img src="images/paris/hd%20(4).jpg" class="card-img" alt="Img">
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container about">
+        <h2 class="display-4" id="bestofplace">Best Of Disneyland</h2>
+        <hr class="headunder">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-6 hotelnspa text-center center ">
+<!--                <h2 class="display-6">Hotels & Spa</h2>-->
+                <center>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/434/244/75/dam/disneyland/attractions/disney-california-adventure/jessies-critter-carousel/jessies-critter-carousel-16x9_1.jpg?1573254130195" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Special Theme Park Entrance</h5>
+<!--                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/640/360/75/dam/disneyland/destinations/downtown-disney-district/the-void-16x9.jpg?1551717601590" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual World-THE VOID</h5>
+<!--                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/630/354/75/dam/disneyland/dining/grand-californian-hotel/disney-princess-breakfast-adventures/girl-princess-costume-characters-16x9.jpg?1574450689444" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Character Dining</h5>
+<!--                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>-->
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 thingstodo">
+<!--                <h2 class="display-6 text-center">Things to Do</h2>-->
+                <center>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://secure.cdn1.wdpromedia.com/resize/mwImage/1/1920/1080/75/dam/wdpro-assets/dlr/parks-and-tickets/entertainment/disney-california-adventure/character-meet-anna-and-elsa-frozen/character-meet-anna-and-elsa-frozen-00.jpg?1544837611900" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Character Experience</h5>
+                            <!--                            <p class="card-text" style="text-align: left;">42 avenue Gabriel Paris, Paris 75008</p>-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1920/1080/75/dam/wdpro-assets/dlr/parks-and-tickets/attractions/disneyland/chip-n-dale-treehouse/chip-n-dale-treehouse-00.jpg?1568740017793" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Attractions</h5>
+                            <!--
+                            <p class="card-text" style="text-align: left;">10 Place de la Concorde
+
+Paris 75008</p>
+-->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/900/360/75/dam/disneyland/gift-disney-vacation/buena-vista-st-holidays-5x2.jpg?1573517983853" class="card-img-top" alt="Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Disney Gifts</h5>
+                            <!--
+                            <p class="card-text" style="text-align: left;">25 avenue Montaigne
+
+Paris, Paris 75008</p>
+-->
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small transparent_black">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="index.html"> Travel Monkey</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    function photo_slide() {
+        var x = document.getElementById("photoslider");
+        if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    }
+
+</script>
+<style>
+    center > .card{
+        height: auto;
+    }
+</style>
+</html>

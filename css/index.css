@@ -1,18 +1,13 @@
-* {
-    font-family: "Trajan Pro";
+@font-face {
+font-family: "Trajan Pro";
+src: url("Font/Trajan Pro Regular.ttf");
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .destination:hover .destlist {
     visibility: visible;
 }
 
-=======
->>>>>>> origin/AshuBranch
+
 .destlist {
     position: absolute;
     top: 100%;
@@ -35,10 +30,7 @@
 .carousel-item > img {
     width: 100%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 .destcard > img {
     transition-duration: 0.2s;
     height: 200px;
@@ -64,10 +56,6 @@
     z-index: 5;
     left: 30%;
     visibility: hidden;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
     transition-duration: 0.2s;
     color: maroon;
 }

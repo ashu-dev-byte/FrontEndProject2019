@@ -75,8 +75,8 @@ footer {
 
 #seardest {
     box-shadow: 10px 10px 13px black;
-    width: 60rem;
-    height: 8rem;
+    width: auto;
+    height: auto;
     border-radius: 4px;
     background-color: black;
     z-index: 999;

@@ -39,7 +39,7 @@
 }
 
 .topslider > .carousel > .carousel-inner {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .carousel-item > img {
@@ -109,6 +109,10 @@ footer {
     border: 1.2px solid orange;
     transition: border 0.125s ease-in-out;
     cursor: pointer;
+}
+
+.list-unstyled li a {
+    color: white;
 }
 
 .img-thumbnail:hover {

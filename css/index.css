@@ -1,6 +1,12 @@
-* {
-    font-family: "Trajan Pro";
+@font-face {
+font-family: "Trajan Pro";
+src: url("Font/Trajan Pro Regular.ttf");
 }
+
+.destination:hover .destlist {
+    visibility: visible;
+}
+
 
 .destlist {
     position: absolute;

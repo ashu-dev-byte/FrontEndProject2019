@@ -21,6 +21,12 @@
     color: white;
 }
 
+.nav-item a:hover{
+   background-color: orange;
+    color: black !important;
+    border-radius: 3px;
+}
+
 .topslider > .carousel > .carousel-inner {
     opacity: 1;
 }

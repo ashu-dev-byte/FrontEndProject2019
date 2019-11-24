@@ -16,6 +16,12 @@
 
 }
 
+.nav-item a:hover{
+   background-color: orange;
+    color: black !important;
+    border-radius: 3px;
+}
+
 p {
     padding: 10px;
     margin: 15px;

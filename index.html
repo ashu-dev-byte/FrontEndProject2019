@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-info fixed-top navbar-light">
+
+<body onload="meraFunc()">
+    <div id="loading" style="position: fixed;width: 100%;height: 100vh;z-index: 99;background: white url('lgloader.gif') no-repeat center;">
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-info fixed-top navbar-light" id="navclas" style="visibility: hidden">
+
         <a class="navbar-brand" href="#">
 
             <i class="fa fa-ravelry mr-1 p-1 bg-danger" aria-hidden="true"></i>
@@ -151,7 +156,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Hong Kong Disneyland</h5>
                         <p class="card-text">Hong Kong Disneyland is a theme park located on reclaimed land in Penny's Bay, Lantau Island. It is the largest theme park in Hong Kong, followed by Ocean Park Hong Kong.</p>
-                        <a href="#" class="btn btn-outline-primary">Know More</a>
+
+                        <a href="disneyland.html" class="btn btn-outline-primary">Know More</a>
+
                         <a href="#" class="btn btn-outline-danger" data-toggle="tooltip" title="Add to Bucket" style="float: right;"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -184,7 +191,8 @@
             </p>
             <div class="row justify-align-center" style="margin-top:80px;">
                 <div class="col-sm-6 col-lg-4 center-block text-center">
-                    <img src="images/services/hotel.png" class="img-thumbnail" style="border: 0;">
+
+                    <img src="images/services/hotel.png" class="img-thumbnail" style="border: 0">
                     <p style="font-size: 20px;  font-family: 'Roboto', sans-serif;">Hotel Accomodations</p>
                 </div>
                 <div class="col-sm-6 col-lg-4 center-block text-center">
@@ -198,8 +206,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4" style="background-color: rgba(20, 39, 57, 0.94);padding-bottom: 60px;color: white;border-radius: 20px 20px 0px 0px;margin-top: 80px;">
 
@@ -275,7 +281,17 @@
         </div>
     </footer>
     <!-- Footer -->
+    <script>
+        var pl = document.getElementById('loading');
+        var nc = document.getElementById('navclas');
 
+        function meraFunc() {
+            setTimeout(function() {
+                pl.style.display = "none";
+                nc.style.visibility = "visible";
+            }, 1600);
+        }
+    </script>
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>

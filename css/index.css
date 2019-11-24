@@ -2,23 +2,6 @@
     font-family: "Trajan Pro";
 }
 
-/*
-.nav-item:hover .nav-link {
-    color: #ff90a0;
-}
-
-.nav-item > .active {
-    color: #ff90a0;
-}
-
-.nav-item {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-*/
-
-
-
 .destination:hover .destlist {
     visibility: visible;
 }
@@ -46,27 +29,10 @@
     width: 100%;
 }
 
-/*
-body {
-    height: 300vh;
-}
-*/
-/*
-.destcard{
-    height: 500px;
-    background-color:rgba(169, 169, 169, 0.1);
-    border-radius: 40px;
-    overflow: hidden;
-}
-.cardmname{
-    color: darkgray;
-    font-size: 50px;
-}*/
 .destcard > img {
     transition-duration: 0.2s;
     height: 200px;
     width: 100%;
-
 }
 
 .destcard:hover {

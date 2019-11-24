@@ -2,10 +2,6 @@
     font-family: "Trajan Pro";
 }
 
-.destination:hover .destlist {
-    visibility: visible;
-}
-
 .destlist {
     position: absolute;
     top: 100%;
@@ -54,7 +50,6 @@
     z-index: 5;
     left: 30%;
     visibility: hidden;
-    /*    content: "Know More";*/
     transition-duration: 0.2s;
     color: maroon;
 }

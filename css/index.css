@@ -23,6 +23,12 @@ src: url("Font/Trajan Pro Regular.ttf");
     color: white;
 }
 
+.nav-item a:hover{
+   background-color: orange;
+    color: black !important;
+    border-radius: 3px;
+}
+
 .topslider > .carousel > .carousel-inner {
     opacity: 1;
 }
@@ -76,8 +82,8 @@ footer {
 
 #seardest {
     box-shadow: 10px 10px 13px black;
-    width: 60rem;
-    height: 8rem;
+    width: auto;
+    height: auto;
     border-radius: 4px;
     background-color: black;
     z-index: 999;

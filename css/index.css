@@ -21,8 +21,8 @@
     color: white;
 }
 
-.nav-item a:hover{
-   background-color: orange;
+.nav-item a:hover {
+    background-color: orange;
     color: black !important;
     border-radius: 3px;
 }
@@ -104,6 +104,28 @@ footer {
     border: 1.2px solid orange;
     transition: border 0.125s ease-in-out;
     cursor: pointer;
+}
+
+.price {
+    position: absolute;
+    background-color: orange;
+    border-radius: 24px;
+    border: 0px solid white;
+    top: 10.5rem;
+    color: white;
+    width: 9rem;
+    height: 2.55rem;
+    left: 4rem;
+}
+
+.price:hover {
+    color: black;
+    border: 0.8px solid black;
+}
+
+.days {
+    font-size: 14.5px;
+    color: #8e8383;
 }
 
 .list-unstyled li a {
